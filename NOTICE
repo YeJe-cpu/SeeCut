@@ -1,0 +1,16 @@
+SeeCut — third-party notices
+
+- skill/seecut/assets/hf-hw/hf-hw.js, hf-hw.css: helpers extracted from HyperFrames registry
+  components (hw-callout-circle / hw-underline / hw-arrow), https://github.com/heygen-com/hyperframes,
+  Copyright HeyGen, licensed under the Apache License 2.0. Modified: self-preview code removed.
+- skill/seecut/assets/hf-hw/fonts/Caveat-700-latin.woff2: Caveat font, SIL Open Font License 1.1.
+
+Not distributed here (install yourself under their own licenses):
+- HyperFrames CLI / runtime (Apache-2.0), GSAP (GreenSock standard license), playwright-core (Apache-2.0),
+  faster-whisper (MIT), ffmpeg.
+- jianying-headless (https://github.com/mcncarl/jianying-headless) — personal learning / non-commercial license.
+- HeyGen, Google Antigravity / Gemini: third-party services under their own terms; bring your own account.
+
+Acknowledgements (see README): video-talkcraft (SHOTBOOK / design language),
+hypit (breaking a video into a structural blueprint), hyperframes-student-kit (design-token structure,
+card library), rachel-digital-human-production (AI-avatar workflow: HeyGen avatar + separate voice track).

@@ -1,0 +1,4 @@
+{"type":"object","required":["fingerprint","checks","evidence_gaps"],"properties":{
+"fingerprint":{"type":"object","required":["texts","duration_sec"],"properties":{"texts":{"type":"array","items":{"type":"string"}},"duration_sec":{"type":"number"}}},
+"checks":{"type":"array","items":{"type":"object","required":["id","pass","evidence"],"properties":{"id":{"type":"string"},"pass":{"type":"boolean"},"evidence":{"type":"string"}}}},
+"evidence_gaps":{"type":"array","items":{"type":"object","required":["time","phrase","suggested_evidence"],"properties":{"time":{"type":"string"},"phrase":{"type":"string"},"suggested_evidence":{"type":"string"}}}}}}

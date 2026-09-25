@@ -1,0 +1,4 @@
+{"type":"object","required":["fingerprint","dimensions","winner","confidence","reason"],"properties":{
+"fingerprint":{"type":"object","required":["X_texts","Y_texts","X_duration_sec","Y_duration_sec"],"properties":{"X_texts":{"type":"array","items":{"type":"string"}},"Y_texts":{"type":"array","items":{"type":"string"}},"X_duration_sec":{"type":"number"},"Y_duration_sec":{"type":"number"}}},
+"dimensions":{"type":"array","items":{"type":"object","required":["name","better","evidence"],"properties":{"name":{"type":"string"},"better":{"type":"string","enum":["X","Y","平手"]},"evidence":{"type":"string"}}}},
+"winner":{"type":"string","enum":["X","Y"]},"confidence":{"type":"integer","minimum":1,"maximum":5},"reason":{"type":"string"}}}

@@ -1,0 +1,126 @@
+@font-face{font-family:"Caveat";src:url("fonts/Caveat-700-latin.woff2") format("woff2");font-weight:700;}
+/* ==== hw-callout-circle ==== */
+
+      
+      
+      
+      /* ---- hw-callout-circle ----------------------------------------------
+         The full callout anatomy: wobbled ellipse outline draws around a
+         target, optional scribble fill sketches in, a curved connector leads
+         to a handwritten label that POPS in with momentum — the drawn shapes
+         absorb the arrival with a volume-preserving contact squash (g21).
+         Ships the full family runtime it needs (hw-boil + boil poses +
+         stroke matrix + springEase) — copy the helpers once per host.
+         WRAPPER RULES: boil owns x/y/rotation of .hw-co-boil; the squash
+         deforms .hw-co-deform (outline + scribble only); the label rides
+         the uniform-scale .hw-co-pop OUTSIDE the deform — non-uniform
+         scale never reaches glyphs. One timeline has ONE onUpdate
+         (everything registers through hwOnUpdate). */
+      .hw-callout {
+        position: absolute;
+        pointer-events: none;
+      }
+      .hw-callout .hw-co-boil,
+      .hw-callout .hw-co-deform,
+      .hw-callout .hw-co-conn-layer,
+      .hw-callout .hw-co-pop {
+        position: absolute;
+        inset: 0;
+      }
+      .hw-callout .hw-co-pop {
+        opacity: 0;
+      }
+      .hw-callout svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      .hw-callout path {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .hw-callout .hw-co-outline {
+        stroke: var(--hw-co-ink, var(--hw-ink, #f4f2ec));
+        stroke-width: var(--hw-co-w, 6);
+      }
+      .hw-callout .hw-co-scribble {
+        /* Warm marker accent to match hw-frame / hw-title / hw-underline; the
+           previous blue read as a default UI colour. Lighter weight and alpha
+           so the hatch sits behind the labelled subject instead of over it. */
+        stroke: var(--hw-co-accent, var(--hw-accent, #ffb020));
+        stroke-width: 3;
+        opacity: 0.42;
+      }
+      .hw-callout .hw-co-connector {
+        stroke: var(--hw-co-ink, var(--hw-ink, #f4f2ec));
+        stroke-width: 4;
+      }
+      .hw-callout .hw-co-label {
+        position: absolute;
+        font-family: var(--hw-font-print, "Caveat", cursive);
+        font-weight: 700;
+        font-size: 54px;
+        color: var(--hw-co-ink, var(--hw-ink, #f4f2ec));
+        white-space: nowrap;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+      }
+      
+/* ==== hw-underline ==== */
+
+      
+      
+      
+      /* ---- hw-underline ------------------------------------------------
+         Squiggle underline / strikethrough / bracket marks that draw on.
+         Size the wrapper over the text they annotate. Requires the hw-boil
+         helpers in the host. */
+      .hw-mark {
+        position: absolute;
+        pointer-events: none;
+      }
+      .hw-mark svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      .hw-mark path {
+        fill: none;
+        stroke: var(--hw-mark-color, var(--hw-accent-warm, #ffb020));
+        stroke-width: var(--hw-mark-w, 7);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      
+/* ==== hw-arrow ==== */
+
+      
+      
+      
+      /* ---- hw-arrow ------------------------------------------------------
+         Hand-wobbled draw-on arrow, boiling, with a travel-aligned
+         arrival stretch on the head. Position the wrapper, build with a
+         CONFIG (arrowStyle / strokeType / boil), wire with a position
+         only: hwArrowBuild + hwArrowOn / hwArrowOff. Requires the hw
+         family helpers below (hwOnUpdate / hwHash / hwBoil / hwBoilPose /
+         springEase / hwStrokeApply / hwDrawOn) in the host script. */
+      .hw-arrow {
+        position: absolute;
+        pointer-events: none;
+      }
+      .hw-arrow svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      .hw-arrow path {
+        fill: none;
+        stroke: var(--hw-arrow-color, var(--hw-ink, #f4f2ec));
+        stroke-width: var(--hw-arrow-w, 6);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .hw-arrow.hw-soft path {
+        filter: blur(0.6px);
+      }
+      

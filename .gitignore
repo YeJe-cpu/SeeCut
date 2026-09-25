@@ -1,0 +1,11 @@
+*.mp4
+*.mov
+*.MOV
+*.wav
+*.m4a
+node_modules/
+__pycache__/
+.DS_Store
+.env
+**/build/frames/
+**/build/person/
