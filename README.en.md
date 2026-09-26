@@ -82,7 +82,9 @@ Tested on macOS only so far. Clone the repo and hand it to your agent; it can in
 - Screen recording + corner webcam footage has not been tested much in this version. Feedback welcome.
 - One video takes from tens of minutes to an hour; try the direction on a 20–30 s sample first.
 
-Please open an issue (there is a template) with your preflight output and the "skill issues" section of the delivery report.
+## Contact
+- **Feedback and bugs**: open a [GitHub issue](https://github.com/YeJe-cpu/SeeCut/issues) (there is a template) with your preflight output and the "skill issues" section of the delivery report.
+- **Anything else**: find me on X [@leaf_sanren](https://x.com/leaf_sanren); DMs are open.
 
 ## Acknowledgements
 This pipeline stands on the shoulders of:

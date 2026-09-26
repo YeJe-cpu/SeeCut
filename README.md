@@ -81,7 +81,9 @@
 - 录屏 + 角落头像类型的素材在当前版本没有充分测试，欢迎反馈。
 - 一条片子要跑几十分钟到一小时，先用 20-30 秒样片试方向。
 
-遇到问题请开 issue（有模板），附上 preflight 输出和交付报告里的"skill 问题"一节。
+## 联系作者
+- **反馈与问题**：请提 [GitHub Issues](https://github.com/YeJe-cpu/SeeCut/issues)（有模板），附上 preflight 输出和交付报告里的"skill 问题"一节。
+- **其他想聊的**：X（推特）[@leaf_sanren](https://x.com/leaf_sanren)，欢迎私信。
 
 ## 致谢
 这套管线站在这些项目的肩膀上：
