@@ -85,6 +85,7 @@ Tested on macOS only so far. Clone the repo and hand it to your agent; it can in
 ## Contact
 - **Feedback and bugs**: open a [GitHub issue](https://github.com/YeJe-cpu/SeeCut/issues) (there is a template) with your preflight output and the "skill issues" section of the delivery report.
 - **Anything else**: find me on X [@leaf_sanren](https://x.com/leaf_sanren); DMs are open.
+- **Commercial licensing and partnerships**: email [aiesecxuanli@gmail.com](mailto:aiesecxuanli@gmail.com).
 
 ## Acknowledgements
 This pipeline stands on the shoulders of:

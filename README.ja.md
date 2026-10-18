@@ -85,6 +85,7 @@ SeeCut は Claude Code などのコーディングエージェント向けのス
 ## 作者への連絡
 - **フィードバック・不具合**：[GitHub Issues](https://github.com/YeJe-cpu/SeeCut/issues) に投稿してください（テンプレートあり）。preflight の出力と、納品レポートの「skill の問題」の節を添えてください。
 - **その他のご相談**：X [@leaf_sanren](https://x.com/leaf_sanren) までお気軽に DM をどうぞ。
+- **商用ライセンス・提携のご相談**：メール [aiesecxuanli@gmail.com](mailto:aiesecxuanli@gmail.com) までどうぞ。
 
 ## 謝辞
 このパイプラインは次のプロジェクトに支えられています：
