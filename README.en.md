@@ -69,7 +69,7 @@ Tested on macOS only so far. Clone the repo and hand it to your agent; it can in
 **Optional extras**
 | Item | Used for |
 |---|---|
-| jianying-headless (third party, non-commercial license) | Building layered JianYing drafts |
+| [Easy JianYing](https://github.com/YeJe-cpu/easy-jianying) (same author, non-commercial license) | Building layered JianYing drafts (replaces the discontinued jianying-headless; migration in progress) |
 | Your own sound-effect library | `scripts/sfx_ledger.py` indexes it, then effects are placed automatically |
 | An image generator | Fills gaps when footage is missing; any image model works, we happen to use Grok CLI |
 
@@ -78,7 +78,7 @@ Tested on macOS only so far. Clone the repo and hand it to your agent; it can in
 - `npx hyperframes` times out: the proxy isn't set as uppercase `HTTPS_PROXY`.
 - `CERTIFICATE_VERIFY_FAILED`: a local proxy is intercepting HTTPS; add its CA for Python/Node, or use curl.
 - AI avatar: AV5 requires creating the digital twin manually on the HeyGen website; AV4 only needs one photo and is good enough when the speaker is shown small.
-- JianYing: the third-party engine needs to be set up on your machine; without it you still get the video and the layered assets.
+- JianYing: the original jianying-headless engine was taken down; we are moving to [Easy JianYing](https://github.com/YeJe-cpu/easy-jianying) (supports JianYing 11.7). Without it you still get the video and the layered assets.
 - Screen recording + corner webcam footage has not been tested much in this version. Feedback welcome.
 - One video takes from tens of minutes to an hour; try the direction on a 20–30 s sample first.
 
@@ -94,7 +94,7 @@ This pipeline stands on the shoulders of:
 - [hypit](https://github.com/hypit-ai/hypit): its approach to breaking down viral videos helped us understand what makes footage feel native to the feed.
 - [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos): ideas for drawing opinion-only segments with no footage to capture, distilled from its prompt collection.
 - [hyperframes-student-kit](https://github.com/nateherkai/hyperframes-student-kit): the Vox Explainer-style design tokens and card styling.
-- [jianying-headless](https://github.com/mcncarl/jianying-headless): the JianYing draft engine.
+- jianying-headless (by Yichen, discontinued): the JianYing draft engine we started with; succeeded by [Easy JianYing](https://github.com/YeJe-cpu/easy-jianying).
 - [rachel-digital-human-production](https://github.com/Jingyi-Wu-Richael/rachel-digital-human-production): the starting point of our AI-avatar workflow; on top of it we tested and improved the AV5 digital twin, the Doubao voice and vertical cropping.
 
 Thanks to the authors of these projects. Third-party components and fonts included in this repository, and their licenses, are listed in [NOTICE](NOTICE).

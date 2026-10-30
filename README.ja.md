@@ -69,7 +69,7 @@ SeeCut は Claude Code などのコーディングエージェント向けのス
 **任意の拡張**
 | 項目 | 用途 |
 |---|---|
-| jianying-headless（サードパーティ、非商用ライセンス） | 剪映のレイヤー付きドラフト生成 |
+| [Easy JianYing](https://github.com/YeJe-cpu/easy-jianying)（同じ作者、非商用ライセンス） | 剪映のレイヤー付きドラフト生成（公開終了した jianying-headless からの移行中） |
 | 手持ちの効果音ライブラリ | `scripts/sfx_ledger.py` で台帳を作ると効果音を自動配置 |
 | 画像生成ツール | 素材が足りないときに自動で画像を補う。どの画像生成モデルでもよく、私たちは手元の Grok CLI を使っています |
 
@@ -78,7 +78,7 @@ SeeCut は Claude Code などのコーディングエージェント向けのス
 - `npx hyperframes` がタイムアウトする：プロキシが大文字の `HTTPS_PROXY` で設定されていません。
 - `CERTIFICATE_VERIFY_FAILED`：ローカルのプロキシが HTTPS を中継しています。Python / Node にそのプロキシの CA を設定するか、curl を使ってください。
 - AI アバター：AV5 は HeyGen の Web サイトで手動でデジタルツインを作る必要があります。AV4 は写真 1 枚で作れ、話し手を小さく表示するなら十分です。
-- 剪映：サードパーティのエンジンは各自の環境に合わせた設定が必要です。なくても完成動画とレイヤー素材は受け取れます。
+- 剪映：以前のエンジン jianying-headless は公開終了したため、[Easy JianYing](https://github.com/YeJe-cpu/easy-jianying)（剪映 11.7 対応）へ移行中です。なくても完成動画とレイヤー素材は受け取れます。
 - 画面録画＋隅のワイプ顔出しの素材は、現バージョンでは十分にテストしていません。フィードバック歓迎です。
 - 1 本に数十分〜1 時間かかります。まず 20〜30 秒のサンプルで方向性を確かめてください。
 
@@ -94,7 +94,7 @@ SeeCut は Claude Code などのコーディングエージェント向けのス
 - [hypit](https://github.com/hypit-ai/hypit)：ヒット動画を分解する考え方が、「ネットらしさ」と素材を理解する助けになりました。
 - [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)：キャプチャできる素材がない意見パートの描き方の参考（収録プロンプトから抽出）。
 - [hyperframes-student-kit](https://github.com/nateherkai/hyperframes-student-kit)：Vox Explainer スタイルのデザイントークンとカードのスタイル。
-- [jianying-headless](https://github.com/mcncarl/jianying-headless)：剪映ドラフトエンジン。
+- jianying-headless（Yichen 作、公開終了）：最初に使っていた剪映ドラフトエンジン。後継は [Easy JianYing](https://github.com/YeJe-cpu/easy-jianying)。
 - [rachel-digital-human-production](https://github.com/Jingyi-Wu-Richael/rachel-digital-human-production)：AI アバター手順の出発点。その上で AV5 デジタルツイン、Doubao 音声、縦長クロップを検証・改良しました。
 
 これらのプロジェクトの作者に感謝します。本リポジトリに含まれるサードパーティのコンポーネントとフォント、およびそのライセンスは [NOTICE](NOTICE) を参照してください。

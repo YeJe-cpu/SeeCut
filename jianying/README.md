@@ -2,7 +2,7 @@
 
 第 2 步每次都会产出一份**分层工程包**（`<工程>/jianying/`）：纸底 PNG、人像按状态切好的视频、信息层逐元素透明 PNG、原声、音效计划，以及一份剪映草稿计划 `plan.json`。
 
-把它变成剪映首页里能打开的草稿，需要第三方的草稿引擎 **jianying-headless**：https://github.com/mcncarl/jianying-headless
+把它变成剪映首页里能打开的草稿，需要剪映草稿引擎。原来用的 jianying-headless（逸晨）已下架，正在迁移到同作者的 **Easy 剪映**：https://github.com/YeJe-cpu/easy-jianying（迁移完成前，本目录的推草稿步骤仍按旧引擎的格式）
 - 它的协议是**个人学习、非商业使用**，本仓不附带它的任何代码，请按它的协议自行安装。
 - 它原生适配 Apple 芯片 Mac；我们在 Intel Mac + 剪映 11.5.0 上跑通过，但需要自己改一些地方（编译架构、固定哈希等）。建议让你的 agent 读它的 README 自己适配。
 - 装好后：`export JIANYING_HEADLESS_ROOT=<它的目录>`，skill 的 preflight 会检测到，交付时自动 build → verify → 登记到剪映首页。

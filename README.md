@@ -68,7 +68,7 @@
 **可选增强**
 | 内容 | 用途 |
 |---|---|
-| jianying-headless（第三方，非商业协议） | 生成剪映分层草稿 |
+| [Easy 剪映](https://github.com/YeJe-cpu/easy-jianying)（同作者，非商业协议） | 生成剪映分层草稿（原 jianying-headless 已下架，对接迁移中） |
 | 你自己的音效库 | `scripts/sfx_ledger.py` 一键建台账后自动配音效 |
 | 一个生图工具 | 缺素材时自动生图补画面；任何生图模型都行，我们手边用的是 Grok CLI |
 
@@ -77,7 +77,7 @@
 - `npx hyperframes` 下载超时：代理没设成大写 `HTTPS_PROXY`。
 - 证书报错（CERTIFICATE_VERIFY_FAILED）：本机有代理做了 HTTPS 中间人，给 Python / Node 配上代理的 CA，或改用 curl。
 - 数字人：AV5 需要在 HeyGen 网页人工建分身；AV4 只要一张照片，缩成小窗时足够用。
-- 剪映：第三方引擎要自己适配；没有它也能拿到成片 + 分层素材。
+- 剪映：原来用的 jianying-headless 已下架，正在迁移到 [Easy 剪映](https://github.com/YeJe-cpu/easy-jianying)（支持剪映 11.7）；没有它也能拿到成片 + 分层素材。
 - 录屏 + 角落头像类型的素材在当前版本没有充分测试，欢迎反馈。
 - 一条片子要跑几十分钟到一小时，先用 20-30 秒样片试方向。
 
@@ -93,7 +93,7 @@
 - [hypit](https://github.com/hypit-ai/hypit)：爆款拆解的思路，帮助我们理解网感和素材。
 - [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)：纯观点段落"没素材可截时怎么画"的画法参考，从它收集的提示词里提炼。
 - [hyperframes-student-kit](https://github.com/nateherkai/hyperframes-student-kit)：Vox Explainer 风格的设计令牌和卡片样式。
-- [jianying-headless](https://github.com/mcncarl/jianying-headless)：剪映草稿引擎。
+- jianying-headless（逸晨，已下架）：最早用的剪映草稿引擎；之后由同作者的 [Easy 剪映](https://github.com/YeJe-cpu/easy-jianying) 接替。
 - [rachel-digital-human-production](https://github.com/Jingyi-Wu-Richael/rachel-digital-human-production)：数字人流程的起点；在它的基础上，我们又实测改进了 AV5 数字分身、豆包配音和竖屏裁切。
 
 感谢这些项目的作者。本仓库包含的第三方组件与字体及其许可见 [NOTICE](NOTICE)。
